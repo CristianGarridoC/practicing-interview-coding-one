@@ -4,11 +4,11 @@ namespace ApplicationCore.Features.GetImage;
 
 [ApiController]
 [Route("get-image")]
-public class GetImage : ControllerBase
+public class GetImageController : ControllerBase
 {
     private readonly IHttpClientFactory _httpClientFactory;
 
-    public GetImage(IHttpClientFactory httpClientFactory)
+    public GetImageController(IHttpClientFactory httpClientFactory)
     {
         _httpClientFactory = httpClientFactory;
     }

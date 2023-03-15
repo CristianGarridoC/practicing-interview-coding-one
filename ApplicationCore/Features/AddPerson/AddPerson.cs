@@ -10,12 +10,12 @@ namespace ApplicationCore.Features.AddPerson;
 
 [ApiController]
 [Route("add-person")]
-public class AddPerson : ControllerBase
+public class AddPersonController : ControllerBase
 {
     private readonly IValidator<AddPersonRequest> _validator;
     private readonly IPersonRepository _personRepository;
     
-    public AddPerson(IValidator<AddPersonRequest> validator, IPersonRepository personRepository)
+    public AddPersonController(IValidator<AddPersonRequest> validator, IPersonRepository personRepository)
     {
         _validator = validator;
         _personRepository = personRepository;

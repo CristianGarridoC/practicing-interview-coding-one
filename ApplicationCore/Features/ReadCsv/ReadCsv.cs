@@ -8,7 +8,7 @@ namespace ApplicationCore.Features.ReadCsv;
 
 [ApiController]
 [Route("read-csv")]
-public class ReadCsv : ControllerBase
+public class ReadCsvController : ControllerBase
 {
     [HttpPost]
     public async Task<IActionResult> Post(IFormFile file)

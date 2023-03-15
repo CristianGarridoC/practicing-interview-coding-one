@@ -10,11 +10,11 @@ namespace ApplicationCore.Features.GetQuote;
 
 [ApiController]
 [Route("get-quote")]
-public class GetQuote : ControllerBase
+public class GetQuoteController : ControllerBase
 {
     private readonly IHttpClientFactory _httpClientFactory;
     
-    public GetQuote(IHttpClientFactory httpClientFactory)
+    public GetQuoteController(IHttpClientFactory httpClientFactory)
     {
         _httpClientFactory = httpClientFactory;
     }
